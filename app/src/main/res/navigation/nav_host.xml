@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/popular">
+    <fragment
+        android:id="@+id/popular"
+        android:name="com.smartherd.navigationcomponents.ui.fragments.Popular"
+        android:label="Popular"
+        tools:layout="@layout/fragment_popular" />
+    <fragment
+        android:id="@+id/topRated"
+        android:name="com.smartherd.navigationcomponents.ui.fragments.TopRated"
+        android:label="TopRated" />
+    <fragment
+        android:id="@+id/nowPlaying"
+        android:name="com.smartherd.navigationcomponents.ui.fragments.NowPlaying"
+        android:label="Playing"
+        tools:layout="@layout/fragment_now_playing" />
+</navigation>
